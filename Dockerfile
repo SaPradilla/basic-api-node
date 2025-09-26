@@ -2,7 +2,7 @@
 FROM node:lts-alpine
 
 WORKDIR /app
-
+ARG PORT=3000
 #  mi archivo -> al contenedor 
 COPY package*.json ./
 RUN npm install
